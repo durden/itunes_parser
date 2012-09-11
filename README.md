@@ -4,8 +4,8 @@ Simple script interface to transform your iTunes XML file into an HTML file.
 
 ## Usage
 
-`python itunes_parser.py`
-`python itunes_parser.py <xml_file> <html_output>`
+- `python itunes_parser.py`
+- `python itunes_parser.py <xml_file> <html_output>`
 
 ## Why
 
