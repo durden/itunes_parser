@@ -50,10 +50,13 @@ def main():
     with Tag(html_file, '<html>'):
         with Tag(html_file, '<head>'):
             html_file.write('<meta charset="utf-8">')
+            html_file.write('<link rel="stylesheet" type="text/css" ' + (
+                             'href="bootstrap/css/bootstrap.min.css">'))
+
             with Tag(html_file, '<title>'):
                 html_file.write('iTunes Library')
 
-        with Tag(html_file, '<table>'):
+        with Tag(html_file, '<table class="table table-striped">'):
             with Tag(html_file, '<tr>') as tr:
                 for header in headers:
                     with Tag(html_file, '<th>') as th:
